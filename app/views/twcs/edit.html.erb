@@ -1,0 +1,8 @@
+<h2>編集画面</h2>
+<%= form_with(model: @twc, local: true) do |form| %>
+  <div class="input_content">
+    <%= form.label(:content, "本文:")%>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit "投稿します" %>
+<% end %>

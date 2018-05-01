@@ -1,0 +1,13 @@
+<h2>以下の内容でツイートする。</h2>
+
+<%= form_with(model: @twc, url: twcs_path, local: true) do |form| %>
+    <%= form.hidden_field :content %>
+    
+    <p>本文:<%= @twc.content %></p>
+  <%= form.submit "投稿します" %>
+<% end %>
+
+<%= form_with(model: @twc, url: new_twc_path, local: true, method: 'get') do |form| %>
+  <%= form.hidden_field :content %>
+  <%= form.submit "もどる", name: 'back' %>
+<% end %>

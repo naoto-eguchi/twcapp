@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twc</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    
+</head>
+  
+  <div class="wrap">
+  
+  <header>
+  <div class="container">    
+    <ul class="row">
+      <li class="col-xs-4 col-sm-4 col-md-4"><a href="https://dic-rr-naoto725.c9users.io">HOME</a></li>
+      <li class="col-xs-4 col-sm-4 col-md-4"><a href="https://dic-rr-naoto725.c9users.io/twcs">つぶやき一覧</a></li>
+      <li class="col-xs-4 col-sm-4 col-md-4"><a href="https://dic-rr-naoto725.c9users.io/twcs/new">新規投稿</a></li>
+    </ul>
+  </div>
+  </header>
+  
+  
+  <body>
+    <%= yield %>
+  </body>
+  
+  <footer>
+    <p>Twcapp</p>
+    <p>© Naoto Eguchi</p>
+  </footer>
+  </div>
+</html>
